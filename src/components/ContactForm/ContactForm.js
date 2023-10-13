@@ -10,8 +10,9 @@ import {
   StyledForm,
 } from './ContactForm.styled';
 import { useDispatch } from 'react-redux';
+import { addContact } from 'redux/contactsSlice';
 
-import { addContact } from 'redux/action';
+// import { addContact } from 'redux/action';
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()

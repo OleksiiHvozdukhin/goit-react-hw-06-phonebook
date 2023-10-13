@@ -1,4 +1,5 @@
-import { deleteContact } from 'redux/action';
+// import { deleteContact } from 'redux/action';
+import { deleteContact } from 'redux/contactsSlice';
 import {
   ContactsList,
   ContactListItem,
