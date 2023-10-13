@@ -12,7 +12,6 @@ import {
 import { useDispatch } from 'react-redux';
 
 import { addContact } from 'redux/action';
-import { nanoid } from '@reduxjs/toolkit';
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
