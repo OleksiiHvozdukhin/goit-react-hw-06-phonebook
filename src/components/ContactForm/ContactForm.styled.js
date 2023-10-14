@@ -83,7 +83,6 @@ export const StyledButton = styled.button`
   cursor: pointer;
 
   transition: background 0.2s ease-in-out;
-  /* transition: background 0.2s ease-in-out; */
 
   &:hover {
     background-color: #cecece20;

@@ -1,10 +1,3 @@
-// import { createStore } from 'redux';
-// import { devToolsEnhancer } from '@redux-devtools/extension';
-// import { rootReducer } from './reducer';
-
-// const enhancer = devToolsEnhancer();
-// export const store = createStore(rootReducer, enhancer);
-
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
 import { contactsReducer } from './contactsSlice';
 import { filterReducer } from './filterSlice';
@@ -19,7 +12,7 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'; // defaults to localStorage for web
+import storage from 'redux-persist/lib/storage';
 
 const rootReducer = combineReducers({
   contacts: contactsReducer,

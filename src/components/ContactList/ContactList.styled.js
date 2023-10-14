@@ -22,7 +22,6 @@ export const ContactTitle = styled.h3`
 `;
 
 export const ContactButton = styled.button`
-  /* width: 177px; */
   height: 30px;
   margin-top: 12px;
   border-style: solid;

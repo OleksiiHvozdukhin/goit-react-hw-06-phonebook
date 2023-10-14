@@ -12,9 +12,7 @@ import {
 import { useDispatch } from 'react-redux';
 import { addContact } from 'redux/contactsSlice';
 
-// import { addContact } from 'redux/action';
-
-const SignupSchema = Yup.object().shape({
+const inputTemplate = Yup.object().shape({
   name: Yup.string()
     .matches(
       /^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/,
@@ -32,11 +30,6 @@ const SignupSchema = Yup.object().shape({
 });
 
 export const ContactForm = () => {
-  // const onSubmit = (values, { resetForm }) => {
-  //   addContacts(values);
-  //   resetForm();
-  // };
-
   const dispatch = useDispatch();
 
   const onSubmit = ({ name, number }) => {
@@ -50,7 +43,7 @@ export const ContactForm = () => {
           name: '',
           number: '',
         }}
-        validationSchema={SignupSchema}
+        validationSchema={inputTemplate}
         onSubmit={onSubmit}
       >
         {() => (
